@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 这里为输入部分 -->
+        <div class="input">
+            <input type="text" placeholder="input something..." class="input-content" id="input">
+            <button class="input-button" id="add">confirm</button>
+        </div>
+        <!-- 这里为内容 -->
+        <div>
+            <!-- 这是导航栏的3个筛选标识部分 -->
+            <div class="nav" id="nav">
+                <ul>
+                    <li data-id="all" class="close on">All</li>
+                    <li data-id="todo" class="close">Todo</li>
+                    <li data-id="finish" class="close">Finish</li>
+                </ul>
+            </div>
+            <div>
+                <!-- 这是数量描述 -->
+                <div class="description">
+                    <span>there are</span>
+                    <span id="sum">0</span>
+                    <span>items</span>
+                </div>
+                <!-- 这是item列表 -->
+                <ul class="list-content" id="list-content">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
